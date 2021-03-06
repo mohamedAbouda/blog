@@ -14,14 +14,11 @@ before_script:
   - php artisan config:clear --no-interaction
   - php artisan key:generate --no-interaction
 
+script:
+  - echo "skipping tests"
+
 
 branches:
   only:
     - production
 
-disable-targets:
-  tests:
-    phpcs:
-      sniff:
-        all: true
-        files: true
