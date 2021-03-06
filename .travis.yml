@@ -18,3 +18,10 @@ before_script:
 branches:
   only:
     - production
+
+disable-targets:
+  tests:
+    phpcs:
+      sniff:
+        all: true
+        files: true
