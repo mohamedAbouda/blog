@@ -25,7 +25,7 @@ There is no post till now. Login and write a new post now!!!
       <article>
         {!! Str::limit($post->body, $limit = 1500, $end = '....... <a href='.url("/".$post->slug).'>Read More</a>') !!}
       </article>
-    </div>
+    </div> 
   </div>
   @endforeach
   {!! $posts->render() !!}
